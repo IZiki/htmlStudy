@@ -9,18 +9,27 @@
                 text-align: center;
             }
             @keyframes zhuanquan {
-                from{
-                    transform:rotate(0)
+                0%{
+                    transform:rotate(0) scale(1);
                 }
-                to{
-                    transform:rotate(360deg)
+                50%{
+                    transform:rotate(180deg) scale(1.2);
+                }
+                100%{
+                    transform:rotate(360deg) scale(1);
                 }
             }
-            .yuanshi{
-                margin-top:100px;
-                animation:zhuanquan 0.1s linear infinite;
-                border-radius:200px;
-
+            .box{
+                overflow:hidden;
+                border-radius:300px;
+                width:300px;
+                height:300px;
+                margin:100px auto;
+                background: #000;
+            }
+            .yuanshi{ 
+                animation:zhuanquan 2s linear infinite;
+                border-radius:300px;
             }
         </style>
     </head>
@@ -31,6 +40,7 @@
         <a href="http://iruxu.com">源子</a>
         <a href="http://iziki.com">子淇</a>
         <br/>
-        <img class="yuanshi" src="img/1.jpg" alt="">
+        <div class="box"><img class="yuanshi" src="img/2.png" alt=""></div>
+        
     </body>
 </html>
